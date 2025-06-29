@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Courier & Express Delivery - WLD Connect Logistics')
-@section('description', 'Fast and reliable courier and express delivery services with real-time tracking, same-day
-    delivery options, and dedicated support for urgent shipments.')
+@section('title', 'Freight & Cargo Handling - WLD Connect Logistics')
+@section('description', 'Professional freight and cargo handling services with heavy-duty equipment, specialized
+    handling techniques, and comprehensive logistics solutions for all cargo types.')
 
 @section('content')
     <!-- Hero Section -->
@@ -28,9 +28,9 @@
                         <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
                             <svg class="w-12 h-12 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0M15 17a2 2 0 104 0" />
                             </svg>
                         </div>
                         <!-- Rotating ring around icon -->
@@ -41,11 +41,11 @@
                 </div>
 
                 <h1 class="text-4xl lg:text-6xl font-bold mb-6">
-                    <span class="text-red-400">Courier &</span> Express Delivery
+                    <span class="text-red-400">Freight &</span> Cargo Handling
                 </h1>
                 <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed mb-8">
-                    Lightning-fast courier and express delivery services with real-time tracking, guaranteed delivery times,
-                    and 24/7 customer support.
+                    Professional freight and cargo handling services with specialized equipment, expert logistics, and
+                    comprehensive solutions for all cargo types and sizes.
                 </p>
             </div>
         </div>
@@ -60,18 +60,20 @@
                         <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0M15 17a2 2 0 104 0" />
                             </svg>
                         </div>
                         <h2 class="text-4xl font-bold text-gray-900">
-                            Lightning-Fast Delivery Solutions
+                            Heavy-Duty Cargo Solutions
                         </h2>
                     </div>
 
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Our courier and express delivery network combines cutting-edge technology with dedicated
-                        professionals to ensure your urgent shipments reach their destination quickly, safely, and reliably
-                        every time.
+                        Our comprehensive freight and cargo handling services utilize state-of-the-art equipment and
+                        experienced professionals to manage everything from standard shipments to oversized, heavy, and
+                        specialized cargo with the utmost care and precision.
                     </p>
 
                     <div class="space-y-6">
@@ -81,13 +83,13 @@
                                 class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-blue-900 mb-2">Same-Day & Express Delivery</h3>
-                                <p class="text-blue-800">Guaranteed same-day delivery within city limits and express
-                                    overnight delivery nationwide.</p>
+                                <h3 class="text-xl font-bold text-blue-900 mb-2">Heavy Equipment & Machinery</h3>
+                                <p class="text-blue-800">Specialized handling of heavy machinery, industrial equipment, and
+                                    oversized cargo with certified operators.</p>
                             </div>
                         </div>
 
@@ -97,15 +99,13 @@
                                 class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-green-900 mb-2">Real-Time GPS Tracking</h3>
-                                <p class="text-green-800">Live tracking of your shipments with precise location updates and
-                                    estimated delivery times.</p>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Container & Bulk Cargo</h3>
+                                <p class="text-green-800">Full container load (FCL) and less than container load (LCL)
+                                    services with efficient container handling.</p>
                             </div>
                         </div>
 
@@ -119,9 +119,9 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-red-900 mb-2">Secure Handling & Insurance</h3>
-                                <p class="text-red-800">Professional handling with full insurance coverage and signature
-                                    confirmation for peace of mind.</p>
+                                <h3 class="text-xl font-bold text-red-900 mb-2">Specialized Cargo Protection</h3>
+                                <p class="text-red-800">Temperature-controlled, hazardous materials, and fragile cargo
+                                    handling with specialized safety protocols.</p>
                             </div>
                         </div>
                     </div>
@@ -129,12 +129,12 @@
                     <!-- Additional Stats -->
                     <div class="grid grid-cols-2 gap-4 mt-8">
                         <div class="bg-white rounded-lg shadow-md p-4 text-center border-t-4 border-blue-600">
-                            <div class="text-2xl font-bold text-blue-600">98.5%</div>
-                            <div class="text-sm text-gray-600">On-Time Delivery</div>
+                            <div class="text-2xl font-bold text-blue-600">100T+</div>
+                            <div class="text-sm text-gray-600">Lifting Capacity</div>
                         </div>
                         <div class="bg-white rounded-lg shadow-md p-4 text-center border-t-4 border-green-600">
-                            <div class="text-2xl font-bold text-green-600">24/7</div>
-                            <div class="text-sm text-gray-600">Support Available</div>
+                            <div class="text-2xl font-bold text-green-600">99.7%</div>
+                            <div class="text-sm text-gray-600">Safe Handling</div>
                         </div>
                     </div>
                 </div>
@@ -142,8 +142,8 @@
                 <div class="fade-in-up stagger-animation" style="--delay: 0.2s;">
                     <div class="relative">
                         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 backdrop-blur-sm">
-                            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                alt="Express Delivery Courier on Motorcycle"
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Heavy Cargo Handling with Cranes and Equipment"
                                 class="w-full h-96 object-cover rounded-xl shadow-2xl">
 
                             <!-- Overlay with feature highlights -->
@@ -157,9 +157,9 @@
                                     class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                    Express
+                                    Certified
                                 </div>
                             </div>
 
@@ -168,9 +168,9 @@
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                     </svg>
-                                    GPS Tracked
+                                    Heavy-Duty
                                 </div>
                             </div>
 
@@ -178,16 +178,16 @@
                             <div class="absolute bottom-6 left-6 right-6">
                                 <div class="grid grid-cols-3 gap-3">
                                     <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
-                                        <div class="text-lg font-bold text-blue-900">Same-Day</div>
-                                        <div class="text-xs text-blue-700">Delivery</div>
+                                        <div class="text-lg font-bold text-blue-900">100T+</div>
+                                        <div class="text-xs text-blue-700">Capacity</div>
                                     </div>
                                     <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
-                                        <div class="text-lg font-bold text-green-900">Real-Time</div>
-                                        <div class="text-xs text-green-700">Tracking</div>
+                                        <div class="text-lg font-bold text-green-900">24/7</div>
+                                        <div class="text-xs text-green-700">Operations</div>
                                     </div>
                                     <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
-                                        <div class="text-lg font-bold text-red-900">Secure</div>
-                                        <div class="text-xs text-red-700">Handling</div>
+                                        <div class="text-lg font-bold text-red-900">Expert</div>
+                                        <div class="text-xs text-red-700">Operators</div>
                                     </div>
                                 </div>
                             </div>
@@ -201,11 +201,11 @@
                                     <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                 </div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Mobile App</h4>
-                                <p class="text-sm text-gray-600">Track & manage deliveries</p>
+                                <h4 class="font-semibold text-gray-900 mb-1">Smart Monitoring</h4>
+                                <p class="text-sm text-gray-600">Real-time cargo tracking</p>
                             </div>
 
                             <div class="bg-white rounded-lg shadow-md p-4 text-center hover-lift">
@@ -214,11 +214,13 @@
                                     <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 8l7.89 1.26a2 2 0 001.11-.502L18 3m-6 9v9" />
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
                                 </div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Digital Proof</h4>
-                                <p class="text-sm text-gray-600">Electronic delivery confirmation</p>
+                                <h4 class="font-semibold text-gray-900 mb-1">Safety Systems</h4>
+                                <p class="text-sm text-gray-600">Advanced safety protocols</p>
                             </div>
                         </div>
                     </div>
@@ -232,11 +234,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">
-                    Delivery <span class="text-red-600">Features</span>
+                    Cargo Handling <span class="text-red-600">Features</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Our comprehensive courier and express delivery services include everything you need for fast, reliable
-                    shipping.
+                    Our comprehensive freight and cargo handling services include everything you need for safe, efficient
+                    cargo management.
                 </p>
             </div>
 
@@ -245,12 +247,12 @@
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Same-Day Delivery</h3>
-                    <p class="text-gray-600">Ultra-fast same-day delivery service for urgent documents and packages within
-                        city limits.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Heavy Machinery Handling</h3>
+                    <p class="text-gray-600">Specialized equipment and certified operators for handling heavy machinery,
+                        industrial equipment, and oversized cargo.</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
@@ -258,14 +260,12 @@
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Live GPS Tracking</h3>
-                    <p class="text-gray-600">Real-time GPS tracking with precise location updates and estimated delivery
-                        times for complete visibility.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Container Services</h3>
+                    <p class="text-gray-600">Complete container handling including loading, unloading, and efficient
+                        container yard management services.</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
@@ -273,12 +273,12 @@
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Documentation</h3>
-                    <p class="text-gray-600">Electronic proof of delivery with digital signatures and photo confirmations
-                        for complete records.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Temperature Control</h3>
+                    <p class="text-gray-600">Climate-controlled handling and storage for temperature-sensitive cargo and
+                        perishable goods.</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
@@ -286,12 +286,12 @@
                     <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Secure & Insured</h3>
-                    <p class="text-gray-600">Full insurance coverage and secure handling protocols to protect your valuable
-                        shipments.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Hazardous Materials</h3>
+                    <p class="text-gray-600">Certified handling of dangerous goods and hazardous materials with strict
+                        safety compliance protocols.</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
@@ -299,12 +299,12 @@
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">24/7 Support</h3>
-                    <p class="text-gray-600">Round-the-clock customer support and emergency delivery services for critical
-                        shipments.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Secure Loading</h3>
+                    <p class="text-gray-600">Professional loading and securing techniques to ensure cargo safety during
+                        transportation and handling.</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
@@ -312,12 +312,12 @@
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Mobile App Integration</h3>
-                    <p class="text-gray-600">Easy-to-use mobile app for booking, tracking, and managing all your delivery
-                        requirements.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Load Planning</h3>
+                    <p class="text-gray-600">Advanced load planning and weight distribution analysis to maximize efficiency
+                        and ensure safety.</p>
                 </div>
             </div>
         </div>
@@ -329,37 +329,38 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <div class="fade-in-up">
                     <h2 class="text-4xl font-bold text-gray-900 mb-8">
-                        Service <span class="text-red-600">Specifications</span>
+                        Equipment <span class="text-red-600">Specifications</span>
                     </h2>
 
                     <div class="space-y-6">
                         <div class="border-l-4 border-red-600 pl-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Delivery Times</h3>
-                            <p class="text-gray-600">Same-day delivery within 4 hours, express overnight nationwide, and
-                                2-3 day standard delivery</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Lifting Capacity</h3>
+                            <p class="text-gray-600">Mobile cranes up to 100 tons, overhead cranes up to 50 tons, and
+                                specialized lifting equipment</p>
                         </div>
 
                         <div class="border-l-4 border-blue-600 pl-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Coverage Area</h3>
-                            <p class="text-gray-600">Complete nationwide coverage with international express delivery to
-                                220+ countries</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Storage Facilities</h3>
+                            <p class="text-gray-600">200,000+ sq ft of covered storage with specialized areas for different
+                                cargo types</p>
                         </div>
 
                         <div class="border-l-4 border-green-600 pl-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Package Limits</h3>
-                            <p class="text-gray-600">Documents to 70kg packages, maximum dimensions 120cm x 80cm x 80cm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Vehicle Fleet</h3>
+                            <p class="text-gray-600">Heavy-duty trucks, flatbeds, lowboys, and specialized transport
+                                vehicles up to 80 tons</p>
                         </div>
 
                         <div class="border-l-4 border-purple-600 pl-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Tracking Updates</h3>
-                            <p class="text-gray-600">Real-time GPS tracking with updates every 15 minutes during active
-                                delivery</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Container Handling</h3>
+                            <p class="text-gray-600">Reach stackers, container forklifts, and automated container handling
+                                systems</p>
                         </div>
 
                         <div class="border-l-4 border-yellow-600 pl-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Fleet Capacity</h3>
-                            <p class="text-gray-600">500+ dedicated vehicles including motorcycles, vans, and trucks for
-                                all delivery needs</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Safety Equipment</h3>
+                            <p class="text-gray-600">Certified rigging equipment, safety monitoring systems, and emergency
+                                response protocols</p>
                         </div>
                     </div>
                 </div>
@@ -385,7 +386,6 @@
             </div>
         </div>
     </section>
-
     <!-- Pricing Plans -->
     <section class="bg-gray-50 py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">

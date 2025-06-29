@@ -1,401 +1,665 @@
-<!-- Industries We Serve -->
 @extends('layouts.app')
 
-@section('title', 'Warehousing Services - WLD Connect Logistics')
-@section('description', 'State-of-the-art warehousing facilities with advanced inventory management systems, climate-controlled environments, and 24/7 security monitoring.')
+@section('title', 'Palletizing Services - WLD Connect Logistics')
+@section('description', 'Professional palletizing services with automated systems, load optimization, and secure
+    packaging solutions for efficient storage and transportation.')
 
 @section('content')
-<!-- Hero Section -->
-<section class="gradient-bg text-white py-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-black opacity-10"></div>
-    
-    <!-- Floating Elements -->
-    <div class="absolute top-20 right-10 opacity-20">
-        <div class="w-20 h-20 border-2 border-white rounded-full animate-pulse"></div>
-    </div>
-    <div class="absolute bottom-20 left-10 opacity-20">
-        <div class="w-16 h-16 border-2 border-red-400 rounded-full animate-bounce"></div>
-    </div>
-    <div class="absolute top-1/3 left-1/4 opacity-15">
-        <div class="w-12 h-12 border-2 border-blue-300 rounded-full animate-ping"></div>
-    </div>
-    
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="max-w-4xl mx-auto text-center fade-in-up">
-            <!-- Icon Section -->
-            <div class="flex justify-center mb-8">
-                <div class="relative">
-                    <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                        <svg class="w-12 h-12 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                        </svg>
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+
+        <!-- Floating Elements -->
+        <div class="absolute top-20 right-10 opacity-20">
+            <div class="w-20 h-20 border-2 border-white rounded-full animate-pulse"></div>
+        </div>
+        <div class="absolute bottom-20 left-10 opacity-20">
+            <div class="w-16 h-16 border-2 border-red-400 rounded-full animate-bounce"></div>
+        </div>
+        <div class="absolute top-1/3 left-1/4 opacity-15">
+            <div class="w-12 h-12 border-2 border-blue-300 rounded-full animate-ping"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center fade-in-up">
+                <!-- Icon Section -->
+                <div class="flex justify-center mb-8">
+                    <div class="relative">
+                        <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <svg class="w-12 h-12 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                        <!-- Rotating ring around icon -->
+                        <div class="absolute inset-0 border-2 border-red-400/30 rounded-full animate-spin"></div>
+                        <!-- Pulsing outer ring -->
+                        <div class="absolute inset-0 border-2 border-white/20 rounded-full animate-ping"></div>
                     </div>
-                    <!-- Rotating ring around icon -->
-                    <div class="absolute inset-0 border-2 border-red-400/30 rounded-full animate-spin"></div>
-                    <!-- Pulsing outer ring -->
-                    <div class="absolute inset-0 border-2 border-white/20 rounded-full animate-ping"></div>
                 </div>
-            </div>
-            
-            <h1 class="text-4xl lg:text-6xl font-bold mb-6">
-                <span class="text-red-400">palletizing</span> Services
-            </h1>
-            <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed mb-8">
-                State-of-the-art storage facilities with advanced inventory management systems designed to keep your goods secure and accessible.
-            </p>
-            
-            <!-- Warehousing Feature Icons -->
-           
-            
-            <!-- Warehousing Stats -->
-            
-        </div>
-    </div>
-    
-    <!-- Wave separator -->
-   
-</section>
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Industries We Serve
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Our palletizing expertise spans across multiple industries, each with unique requirements and standards.
-            </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Industry 1 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Manufacturing</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Raw materials, components, and finished goods palletizing for manufacturing facilities with focus on production line efficiency.
-                </p>
-            </div>
-
-            <!-- Industry 2 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
-                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Retail & E-commerce</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Consumer goods, apparel, and e-commerce fulfillment with emphasis on order accuracy and fast turnaround times.
-                </p>
-            </div>
-
-            <!-- Industry 3 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-200 transition-colors">
-                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Food & Beverage</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Temperature-controlled palletizing for perishable goods with strict hygiene and safety protocols.
-                </p>
-            </div>
-
-            <!-- Industry 4 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors">
-                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Pharmaceutical</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Specialized handling for pharmaceutical products with compliance to regulatory standards and contamination prevention.
-                </p>
-            </div>
-
-            <!-- Industry 5 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
-                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Automotive</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Heavy-duty palletizing for automotive parts and components with precision handling and damage prevention.
-                </p>
-            </div>
-
-            <!-- Industry 6 -->
-            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 group">
-                <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-200 transition-colors">
-                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Construction Materials</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    Heavy construction materials palletizing with emphasis on load stability and safety protocols.
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                    <span class="text-red-400">Palletizing</span> Services
+                </h1>
+                <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed mb-8">
+                    Professional palletizing solutions with automated systems and load optimization to maximize efficiency
+                    and minimize shipping costs.
                 </p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Statistics Section -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Our Track Record
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Numbers that speak to our expertise and commitment to excellence in palletizing services.
-            </p>
-        </div>
+    <!-- Service Overview -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-up">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl font-bold text-gray-900">
+                            Advanced Palletizing Solutions
+                        </h2>
+                    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Stat 1 -->
-            <div class="text-center group">
-                <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-counter="50000">50K+</div>
-                <div class="text-xl text-gray-600">Pallets Processed</div>
-                <div class="text-sm text-gray-500 mt-2">Monthly</div>
-            </div>
-
-            <!-- Stat 2 -->
-            <div class="text-center group">
-                <div class="bg-gradient-to-br from-green-500 to-green-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-counter="24">24/7</div>
-                <div class="text-xl text-gray-600">Operations</div>
-                <div class="text-sm text-gray-500 mt-2">Round the Clock</div>
-            </div>
-
-            <!-- Stat 3 -->
-            <div class="text-center group">
-                <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-counter="99">99.8%</div>
-                <div class="text-xl text-gray-600">Accuracy Rate</div>
-                <div class="text-sm text-gray-500 mt-2">Quality Guaranteed</div>
-            </div>
-
-            <!-- Stat 4 -->
-            <div class="text-center group">
-                <div class="bg-gradient-to-br from-red-500 to-red-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-counter="500">500+</div>
-                <div class="text-xl text-gray-600">Happy Clients</div>
-                <div class="text-sm text-gray-500 mt-2">Worldwide</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Quote Section -->
-<section id="quote" class="py-20 bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl p-8 md:p-12">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Get Your Free Quote
-                    </h2>
-                    <p class="text-xl text-blue-100 leading-relaxed">
-                        Tell us about your palletizing requirements and we'll provide a customized solution with competitive pricing.
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Our state-of-the-art palletizing services combine advanced robotics with expert manual techniques to
+                        ensure your products are efficiently organized, securely packaged, and optimally loaded for storage
+                        and transportation.
                     </p>
+
+                    <div class="space-y-6">
+                        <div
+                            class="flex items-start space-x-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 hover-lift">
+                            <div
+                                class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-2">Automated Palletizing Systems</h3>
+                                <p class="text-blue-800">Robotic palletizing systems for high-speed, consistent, and precise
+                                    stacking of products with minimal human intervention.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start space-x-4 bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-6 hover-lift">
+                            <div
+                                class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Load Optimization</h3>
+                                <p class="text-green-800">Advanced algorithms to maximize pallet utilization and minimize
+                                    shipping costs while ensuring load stability.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start space-x-4 bg-gradient-to-r from-red-50 to-red-100 rounded-xl p-6 hover-lift">
+                            <div
+                                class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-red-900 mb-2">Secure Wrapping & Strapping</h3>
+                                <p class="text-red-800">Professional wrapping and strapping services to ensure load
+                                    integrity during transport and storage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Stats -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-white rounded-lg shadow-md p-4 text-center border-t-4 border-blue-600">
+                            <div class="text-2xl font-bold text-blue-600">2,000+</div>
+                            <div class="text-sm text-gray-600">Pallets/Day</div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-4 text-center border-t-4 border-green-600">
+                            <div class="text-2xl font-bold text-green-600">99.8%</div>
+                            <div class="text-sm text-gray-600">Load Stability</div>
+                        </div>
+                    </div>
                 </div>
 
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="quote-form">
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Full Name *</label>
-                        <input type="text" name="name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300" placeholder="Your full name" required>
+                <div class="fade-in-up stagger-animation" style="--delay: 0.2s;">
+                    <div class="relative">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 backdrop-blur-sm">
+                            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Automated Palletizing System in Action"
+                                class="w-full h-96 object-cover rounded-xl shadow-2xl">
+
+                            <!-- Overlay with feature highlights -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-xl">
+                            </div>
+
+                            <!-- Feature badges -->
+                            <div class="absolute top-4 right-4">
+                                <div
+                                    class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Automated
+                                </div>
+                            </div>
+
+                            <div class="absolute top-4 left-4">
+                                <div
+                                    class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                    High-Speed
+                                </div>
+                            </div>
+
+                            <!-- Bottom feature highlights -->
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
+                                        <div class="text-lg font-bold text-blue-900">Robotic</div>
+                                        <div class="text-xs text-blue-700">Systems</div>
+                                    </div>
+                                    <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
+                                        <div class="text-lg font-bold text-green-900">Load</div>
+                                        <div class="text-xs text-green-700">Optimization</div>
+                                    </div>
+                                    <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3 text-center">
+                                        <div class="text-lg font-bold text-red-900">Secure</div>
+                                        <div class="text-xs text-red-700">Wrapping</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technology highlights -->
+                        <div class="grid grid-cols-2 gap-4 mt-6">
+                            <div class="bg-white rounded-lg shadow-md p-4 text-center hover-lift">
+                                <div
+                                    class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Smart Algorithms</h4>
+                                <p class="text-sm text-gray-600">AI-powered load planning</p>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-md p-4 text-center hover-lift">
+                                <div
+                                    class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Quality Control</h4>
+                                <p class="text-sm text-gray-600">Automated inspection systems</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Email Address *</label>
-                        <input type="email" name="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300" placeholder="your@email.com" required>
-                    </div>
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Phone Number</label>
-                        <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300" placeholder="+92 300 1234567">
-                    </div>
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Company Name</label>
-                        <input type="text" name="company" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300" placeholder="Your company">
-                    </div>
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Service Type *</label>
-                        <select name="service_type" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300" required>
-                            <option value="" class="text-gray-900">Select service type</option>
-                            <option value="manual" class="text-gray-900">Manual Palletizing</option>
-                            <option value="automated" class="text-gray-900">Automated Palletizing</option>
-                            <option value="depalletizing" class="text-gray-900">Depalletizing</option>
-                            <option value="custom" class="text-gray-900">Custom Solution</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-white text-sm font-semibold mb-2">Volume (Pallets/Month)</label>
-                        <select name="volume" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300">
-                            <option value="" class="text-gray-900">Select volume</option>
-                            <option value="1-50" class="text-gray-900">1-50 pallets</option>
-                            <option value="51-200" class="text-gray-900">51-200 pallets</option>
-                            <option value="201-500" class="text-gray-900">201-500 pallets</option>
-                            <option value="500+" class="text-gray-900">500+ pallets</option>
-                        </select>
-                    </div>
-                    <div class="md:col-span-2">
-                        <label class="block text-white text-sm font-semibold mb-2">Project Details</label>
-                        <textarea name="details" rows="4" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:border-yellow-400 focus:bg-opacity-30 transition-all duration-300 resize-none" placeholder="Tell us about your specific requirements, product types, dimensions, weight, timeline, etc."></textarea>
-                    </div>
-                    <div class="md:col-span-2 text-center">
-                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
-                            Get Free Quote Now
-                        </button>
-                        <p class="text-blue-100 text-sm mt-4">
-                            We'll respond within 24 hours with a detailed proposal
-                        </p>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FAQ Section -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Frequently Asked Questions
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Get answers to common questions about our palletizing services and processes.
-            </p>
+    <!-- Features Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Palletizing <span class="text-red-600">Features</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our comprehensive palletizing solutions include everything you need for efficient product handling and
+                    shipping.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Robotic Palletizing</h3>
+                    <p class="text-gray-600">High-speed robotic systems for consistent, precise, and efficient palletizing
+                        of various product types and sizes.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.1s;">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Pattern Optimization</h3>
+                    <p class="text-gray-600">Advanced algorithms to determine optimal stacking patterns for maximum pallet
+                        utilization and load stability.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.2s;">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Custom Configurations</h3>
+                    <p class="text-gray-600">Flexible palletizing configurations tailored to your specific product
+                        requirements and shipping needs.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.3s;">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Secure Wrapping</h3>
+                    <p class="text-gray-600">Professional stretch wrapping and strapping services to ensure load integrity
+                        during transport and storage.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.4s;">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Quality Inspection</h3>
+                    <p class="text-gray-600">Automated quality control systems to ensure proper stacking, alignment, and
+                        load stability before shipment.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.5s;">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">High-Speed Processing</h3>
+                    <p class="text-gray-600">Rapid palletizing capabilities to keep up with high-volume production lines
+                        and tight shipping schedules.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-6">
-                <!-- FAQ Item 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(1)">
-                        <h3 class="text-xl font-bold text-gray-900">What types of products can be palletized?</h3>
-                        <svg id="faq-icon-1" class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-1" class="hidden px-8 pb-6">
-                        <p class="text-gray-600 leading-relaxed">
-                            We can palletize virtually any type of product including boxes, bags, bottles, cans, drums, irregular shapes, and fragile items. Our team has experience with everything from consumer goods to industrial materials, pharmaceuticals, food products, and automotive parts.
-                        </p>
+    <!-- Specifications -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="fade-in-up">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-8">
+                        System <span class="text-red-600">Specifications</span>
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-red-600 pl-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Processing Capacity</h3>
+                            <p class="text-gray-600">Up to 2,000 pallets per day with multiple robotic systems operating
+                                simultaneously</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-600 pl-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Pallet Dimensions</h3>
+                            <p class="text-gray-600">Supports standard 48"x40", 42"x42", and custom pallet sizes up to
+                                60"x48"</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-600 pl-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Load Capacity</h3>
+                            <p class="text-gray-600">Maximum pallet load weight of 4,000 lbs with height up to 8 feet</p>
+                        </div>
+
+                        <div class="border-l-4 border-purple-600 pl-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Product Range</h3>
+                            <p class="text-gray-600">Handles boxes, cases, bags, and irregular shaped products from 1 lb to
+                                100 lbs</p>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-600 pl-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Accuracy Rate</h3>
+                            <p class="text-gray-600">99.8% placement accuracy with advanced vision systems and sensors</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- FAQ Item 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(2)">
-                        <h3 class="text-xl font-bold text-gray-900">How do you ensure load stability during transport?</h3>
-                        <svg id="faq-icon-2" class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-2" class="hidden px-8 pb-6">
-                        <p class="text-gray-600 leading-relaxed">
-                            We use proven palletizing patterns, proper weight distribution techniques, and appropriate securing methods including stretch wrapping, strapping, and corner protectors. Our patterns are designed to create interlocking structures that minimize shifting during transport.
-                        </p>
-                    </div>
-                </div>
+                <div class="fade-in-up stagger-animation" style="--delay: 0.2s;">
+                    <div class="bg-gray-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Technology Features</h3>
 
-                <!-- FAQ Item 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(3)">
-                        <h3 class="text-xl font-bold text-gray-900">What is the typical turnaround time for palletizing services?</h3>
-                        <svg id="faq-icon-3" class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-3" class="hidden px-8 pb-6">
-                        <p class="text-gray-600 leading-relaxed">
-                            Turnaround time depends on volume and complexity. Standard palletizing can typically be completed within 24-48 hours. For urgent requests or large volumes, we offer expedited services with same-day completion available.
-                        </p>
-                    </div>
-                </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">3D Vision Systems</span>
+                            </div>
 
-                <!-- FAQ Item 4 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(4)">
-                        <h3 class="text-xl font-bold text-gray-900">Do you provide pallets or do I need to supply them?</h3>
-                        <svg id="faq-icon-4" class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-4" class="hidden px-8 pb-6">
-                        <p class="text-gray-600 leading-relaxed">
-                            We offer both options. We can supply high-quality pallets in various sizes and materials (wood, plastic, metal) or work with pallets you provide. We'll recommend the best pallet type based on your product and shipping requirements.
-                        </p>
-                    </div>
-                </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">AI-Powered Pattern Recognition</span>
+                            </div>
 
-                <!-- FAQ Item 5 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(5)">
-                        <h3 class="text-xl font-bold text-gray-900">Can you handle temperature-sensitive products?</h3>
-                        <svg id="faq-icon-5" class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div id="faq-content-5" class="hidden px-8 pb-6">
-                        <p class="text-gray-600 leading-relaxed">
-                            Yes, we have climate-controlled facilities and can handle frozen, refrigerated, and temperature-sensitive products. Our team follows strict protocols to maintain cold chain integrity throughout the palletizing process.
-                        </p>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Real-Time Load Monitoring</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Automated Wrapping Systems</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">WMS Integration</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Predictive Maintenance</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Performance Analytics & Reporting</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Call to Action -->
-<section class="py-20 bg-gradient-to-r from-red-600 to-red-700">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Optimize Your Palletizing?
-        </h2>
-        <p class="text-xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Contact our palletizing experts today and discover how we can improve your logistics efficiency, reduce costs, and ensure product safety.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+92-XXX-XXXXXXX" class="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                📞 Call Now
-            </a>
-            <a href="mailto:info@wldconnectlogistics.com" class="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105">
-                ✉️ Email Us
-            </a>
-            <a href="{{ route('contact') }}" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                Get Started
-            </a>
+    <!-- Pricing Plans -->
+    <section class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Palletizing <span class="text-red-600">Plans</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Flexible palletizing solutions designed to meet your production volume and budget requirements.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift fade-in-up">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Standard Palletizing</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$8.50<span
+                                class="text-lg text-gray-600">/pallet</span></div>
+                        <p class="text-gray-600">Ideal for low to medium volume operations</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Manual palletizing services</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Basic load optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Stretch wrapping included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Standard pallet sizes</span>
+                        </li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift fade-in-up stagger-animation border-2 border-red-600 relative"
+                    style="--delay: 0.1s;">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold">Most
+                            Popular</span>
+                    </div>
+
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Automated</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$6.25<span
+                                class="text-lg text-gray-600">/pallet</span></div>
+                        <p class="text-gray-600">Perfect for high-volume operations</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Robotic palletizing systems</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">AI-powered load optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Automated wrapping & strapping</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Real-time quality inspection</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Custom pallet configurations</span>
+                        </li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift fade-in-up stagger-animation"
+                    style="--delay: 0.2s;">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Enterprise</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">Custom<span class="text-lg text-gray-600">
+                                pricing</span></div>
+                        <p class="text-gray-600">For specialized requirements</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Dedicated palletizing lines</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Custom system configuration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Dedicated operations team</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Advanced analytics & reporting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">SLA guarantees</span>
+                        </li>
+                    </ul>
+
+                    <button
+                        class="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto fade-in-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    Ready to Optimize Your Palletizing Process?
+                </h2>
+                <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                    Contact our palletizing experts today to discuss your requirements and get a customized solution that
+                    improves efficiency and reduces costs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{{ route('contact') }}"
+                        class="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 hover-lift">
+                        Get Free Consultation
+                    </a>
+                    <a href="{{ route('services') }}"
+                        class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
+                        View All Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
-
-

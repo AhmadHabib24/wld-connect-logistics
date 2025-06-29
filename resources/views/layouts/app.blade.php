@@ -311,7 +311,7 @@
                     <div class="w-12 h-12 flex items-center justify-center">
                         <!-- Actual Logo Image -->
                         <img src="{{ asset('logo/wldlogo.png') }}" alt="WLD Connect Logistics Logo"
-                            class="w-full h-full object-contain">
+                            class="object-contain" style="margin-left: 60px;max-width:130px";>
                     </div>
                 </div>
 
@@ -330,29 +330,29 @@
                             class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                             <div class="py-2">
                                 <a href="{{ route('services.palletizing') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Palletizing</a>
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.palletizing') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Palletizing</a>
                                 <a href="{{ route('services.warehousing') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Warehousing</a>
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.warehousing') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Warehousing</a>
                                 <a href="{{ route('services.courier-express') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Courier
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.courier-express') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Courier
                                     & Express Delivery</a>
                                 <a href="{{ route('services.freight-cargo') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Freight
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.freight-cargo') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Freight
                                     & Cargo Handling</a>
                                 <a href="{{ route('services.supply-chain') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Supply
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.supply-chain') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Supply
                                     Chain Management</a>
                                 <a href="{{ route('services.shipping') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Local
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.shipping') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Local
                                     & International Shipping</a>
                                 <a href="{{ route('services.distribution') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Distribution
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.distribution') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Distribution
                                     & Fulfillment</a>
                                 <a href="{{ route('services.customs-clearance') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Customs
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.customs-clearance') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Customs
                                     Clearance</a>
                                 <a href="{{ route('services.last-mile') }}"
-                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors">Last-Mile
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors {{ request()->routeIs('services.last-mile') ? 'bg-red-50 text-red-600 border-l-4 border-red-600' : '' }}">Last-Mile
                                     Delivery</a>
                             </div>
                         </div>
@@ -395,10 +395,10 @@
                 </div>
                 <nav class="space-y-4">
                     <a href="{{ route('home') }}"
-                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100">Home</a>
+                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100 {{ request()->routeIs('home') ? 'text-red-600 bg-red-50 px-3 rounded-lg border-l-4 border-red-600' : '' }}">Home</a>
                     <div>
                         <button
-                            class="w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100 flex justify-between items-center"
+                            class="w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100 flex justify-between items-center {{ request()->routeIs('services*') ? 'text-red-600' : '' }}"
                             onclick="toggleMobileSubmenu()">
                             Services
                             <svg class="w-5 h-5 transform transition-transform" id="services-arrow" fill="none"
@@ -409,30 +409,35 @@
                         </button>
                         <div id="mobile-services-submenu" class="hidden pl-4 space-y-2 mt-2">
                             <a href="{{ route('services.palletizing') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Palletizing</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.palletizing') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Palletizing</a>
                             <a href="{{ route('services.warehousing') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Warehousing</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.warehousing') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Warehousing</a>
                             <a href="{{ route('services.courier-express') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Courier & Express</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.courier-express') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Courier
+                                & Express</a>
                             <a href="{{ route('services.freight-cargo') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Freight & Cargo</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.freight-cargo') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Freight
+                                & Cargo</a>
                             <a href="{{ route('services.supply-chain') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Supply Chain</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.supply-chain') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Supply
+                                Chain</a>
                             <a href="{{ route('services.shipping') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Shipping</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.shipping') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Shipping</a>
                             <a href="{{ route('services.distribution') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Distribution</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.distribution') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Distribution</a>
                             <a href="{{ route('services.customs-clearance') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Customs Clearance</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.customs-clearance') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Customs
+                                Clearance</a>
                             <a href="{{ route('services.last-mile') }}"
-                                class="block py-2 text-gray-600 hover:text-red-600">Last-Mile Delivery</a>
+                                class="block py-2 text-gray-600 hover:text-red-600 {{ request()->routeIs('services.last-mile') ? 'text-red-600 font-semibold bg-red-50 px-2 rounded border-l-2 border-red-600' : '' }}">Last-Mile
+                                Delivery</a>
                         </div>
                     </div>
                     <a href="{{ route('about') }}"
-                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100">About
+                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100 {{ request()->routeIs('about') ? 'text-red-600 bg-red-50 px-3 rounded-lg border-l-4 border-red-600' : '' }}">About
                         Us</a>
                     <a href="{{ route('contact') }}"
-                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100">Contact
+                        class="block py-3 text-lg font-medium text-gray-700 hover:text-red-600 border-b border-gray-100 {{ request()->routeIs('contact') ? 'text-red-600 bg-red-50 px-3 rounded-lg border-l-4 border-red-600' : '' }}">Contact
                         Us</a>
                     <a href="{{ route('contact') }}"
                         class="block mt-6 bg-red-600 text-white px-6 py-3 rounded-lg text-center font-semibold hover:bg-red-700 transition-colors">Get
@@ -445,12 +450,78 @@
         <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
     </header>
 
+    <style>
+        /* Custom CSS for nav-link active states */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+        }
+
+        .nav-link:hover {
+            color: #dc2626;
+            background-color: #fef2f2;
+        }
+
+        .nav-link.active {
+            color: #dc2626;
+            background-color: #fef2f2;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 3px;
+            background-color: #dc2626;
+            border-radius: 2px;
+        }
+
+        /* Additional styling for dropdown active items */
+        .dropdown-item-active {
+            background-color: #fef2f2;
+            color: #dc2626;
+            border-left: 4px solid #dc2626;
+            font-weight: 600;
+        }
+
+        /* Mobile menu active states */
+        .mobile-nav-active {
+            color: #dc2626;
+            background-color: #fef2f2;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid #dc2626;
+            font-weight: 600;
+        }
+
+        .mobile-submenu-active {
+            color: #dc2626;
+            font-weight: 600;
+            background-color: #fef2f2;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            border-radius: 0.25rem;
+            border-left: 2px solid #dc2626;
+        }
+    </style>
+
     <!-- Main Content -->
     <main>
         @yield('content')
 
         <!-- Demo Content for Testing -->
-       
+
     </main>
 
     <!-- Floating Chat Widgets -->
@@ -536,10 +607,11 @@
                         <div class="w-10 h-10 flex items-center justify-center">
                             <!-- Footer Logo -->
                             <img src="{{ asset('logo/wldlogo.png') }}" alt="WLD Connect Logistics"
-                                class="w-full h-full object-contain filter brightness-0 invert">
+                                class="object-contain filter brightness-0 invert"
+                                style="margin-left: 60px;max-width:130px";>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">WLD CONNECT LOGISTICS</h3>
+                            <h3 class="text-xl font-bold" style="margin-left: 70px">WLD CONNECT LOGISTICS</h3>
                         </div>
                     </div>
                     <p class="text-blue-100 mb-4 leading-relaxed">
